@@ -19,9 +19,10 @@
 // // const alerta = document.querySelector(".alerta"); //chamo uma classe e coloco o ponto e o que procuro, ex: "".alerta
 // // console.log("Por Classe:", alerta.textContent)// tras o texto sem alteracao o textcontent
 
-// // const span = document.querySelector("#unico"); //# chama o ID
+// // const span = document.querySelector("#unico"); //# chama o ID, tenho que colocar esse # porque coloco o querySelector
 // // console.log(span);
-// // span.textContent = "Alterado pelo queryselector!";
+// // span.textContent = "Alterado pelo queryselector!"; //span é uma "tag coringa" que uso para qualquer coisa, colocar um texto
+//por exemplo
 
 // // const pNoDiv = document.querySelector("div p") //chamar a tag dentro da div, chama o pai primeiro ex: "div p";
 // // pNoDiv.style.fontWeight = "bold";
@@ -61,25 +62,27 @@
 
 // document.getElementById("btn-mudar").addEventListener("click", mudarDados);//(espera uma acao)
 
-const lista = document.getElementById("lista");
-function adicionarItem() {
-    const novoItem = document.createElement("li") //peguei minha li
+// const lista = document.getElementById("lista");
+// function adicionarItem() {
+//     const novoItem = document.createElement("li") //peguei minha li
 
-    novoItem.textContent = "Novo Item às " + new Date().toLocaleTimeString();// peguei a li e coloquei essas informacoes 
-    // como a data dentro
-    lista.appendChild(novoItem); //chamo minha UL
-}
+//     novoItem.textContent = "Novo Item às " + new Date().toLocaleTimeString();// peguei a li e coloquei essas informacoes 
+//     // como a data dentro
+//     lista.appendChild(novoItem); //chamo minha UL
+// }
 
-function removerUltimo() {
-    const ultimo = lista.lastElementChild;
+// function removerUltimo() {
+//     const ultimo = lista.lastElementChild;
 
-    if (ultimo) {
-        lista.removeChild(ultimo);
-        console.log("Ultimo item removido.");
-    } else {
-        console.log("Lista vazia. Nada a remover.")
+//     if (ultimo) {
+//         lista.removeChild(ultimo);
+//         console.log("Ultimo item removido.");
+//     } else {
+//         console.log("Lista vazia. Nada a remover.")
 
-    }
-}
- document.getElementById("btn-add").addEventListener("click", adicionarItem);
- document.getElementById("btn-remover").addEventListener("click", removerUltimo);
+//     }
+// }
+//  document.getElementById("btn-add").addEventListener("click", adicionarItem);
+//  document.getElementById("btn-remover").addEventListener("click", removerUltimo);
+
+
